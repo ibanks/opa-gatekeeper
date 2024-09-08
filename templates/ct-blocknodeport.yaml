@@ -9,7 +9,7 @@ metadata:
       Disallows all Services with type NodePort.
 
       https://kubernetes.io/docs/concepts/services-networking/service/#nodeport
-    argocd.argoproj.io/sync-wave: "0"
+  namespace: gatekeeper-system
 spec:
   crd:
     spec:
