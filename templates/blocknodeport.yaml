@@ -3,6 +3,8 @@ kind: K8sBlockNodePort
 metadata:
   name: block-node-port
   namespace: gatekeeper-system
+  annotations:
+    argocd.argoproj.io/sync-wave: "1"
 spec:
   match:
     kinds:
